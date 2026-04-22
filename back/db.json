@@ -1,0 +1,215 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Rafael",
+      "email": "rafael@estetica.com",
+      "password": "123456"
+    }
+  ],
+  "stores": [
+    {
+      "id": "5",
+      "name": "Unidade Itaim - Derme Clínica",
+      "contact": "11993456789",
+      "userId": "1"
+    },
+    {
+      "id": "12",
+      "name": "Filial Perdizes - Bella Donna",
+      "contact": "11989876543",
+      "userId": "1"
+    },
+    {
+      "id": "17",
+      "name": "Unidade Barra Funda - Crystal Care",
+      "contact": "11985678901",
+      "userId": "1"
+    },
+    {
+      "id": "18",
+      "name": "Filial Brás - Urban Beauty",
+      "contact": "11986789012",
+      "userId": "1"
+    },
+    {
+      "id": "22",
+      "name": "Filial Aricanduva - Golden Beauty",
+      "contact": "11981122334",
+      "userId": "1"
+    },
+    {
+      "id": "23",
+      "name": "Unidade Sapopemba - Silk & Glow",
+      "contact": "11982233445",
+      "userId": "1"
+    },
+    {
+      "id": "24",
+      "name": "Filial São Lucas - Pure Nature",
+      "contact": "11983344556",
+      "userId": "1"
+    },
+    {
+      "id": "25",
+      "name": "Unidade Diadema - Star Beauty",
+      "contact": "11984455667",
+      "userId": "1"
+    },
+    {
+      "id": "26",
+      "name": "Filial Santo André - Velvet Care",
+      "contact": "11985566778",
+      "userId": "1"
+    },
+    {
+      "id": "27",
+      "name": "Unidade São Bernardo - Charm Clinic",
+      "contact": "11986677889",
+      "userId": "1"
+    },
+    {
+      "id": "28",
+      "name": "Filial Mauá - Essence Express",
+      "contact": "11987788990",
+      "userId": "1"
+    },
+    {
+      "id": "29",
+      "name": "Unidade Guarulhos - Glamour Point",
+      "contact": "11988899001",
+      "userId": "1"
+    },
+    {
+      "id": "30",
+      "name": "Filial Osasco - Light Therapy",
+      "contact": "11989900112",
+      "userId": "1"
+    },
+    {
+      "id": "31",
+      "name": "Unidade Barueri - Total Spa",
+      "contact": "11981231234",
+      "userId": "1"
+    },
+    {
+      "id": "32",
+      "name": "Filial Santana - Rosa Estética",
+      "contact": "11982342345",
+      "userId": "1"
+    },
+    {
+      "id": "33",
+      "name": "Unidade Casa Verde - Timeless Beauty",
+      "contact": "11983453456",
+      "userId": "1"
+    },
+    {
+      "id": "34",
+      "name": "Filial Mandaqui - Vital Care",
+      "contact": "11984564567",
+      "userId": "1"
+    },
+    {
+      "id": "35",
+      "name": "Unidade Vila Maria - Aurora Salon",
+      "contact": "11985675678",
+      "userId": "1"
+    },
+    {
+      "id": "36",
+      "name": "Filial Vila Guilherme - Ivory Touch",
+      "contact": "11986786789",
+      "userId": "1"
+    },
+    {
+      "id": "37",
+      "name": "Unidade Jaçanã - Forever Young",
+      "contact": "11987897890",
+      "userId": "1"
+    },
+    {
+      "id": "38",
+      "name": "Filial Freguesia do Ó - Mystic Beauty",
+      "contact": "11988908901",
+      "userId": "1"
+    },
+    {
+      "id": "39",
+      "name": "Unidade Perus - Sacred Spa",
+      "contact": "11989019012",
+      "userId": "1"
+    },
+    {
+      "id": "40",
+      "name": "Filial Pirituba - Harmony Clinic",
+      "contact": "11981140123",
+      "userId": "1"
+    },
+    {
+      "id": "41",
+      "name": "Unidade Brasilândia - Nature Essence",
+      "contact": "11982251234",
+      "userId": "1"
+    },
+    {
+      "id": "42",
+      "name": "Filial Vitória Régia - Seduction Salão",
+      "contact": "11983362345",
+      "userId": "1"
+    },
+    {
+      "id": "43",
+      "name": "Unidade Vila Soco - Celestial Care",
+      "contact": "11984473456",
+      "userId": "1"
+    },
+    {
+      "id": "44",
+      "name": "Filial Capão Redondo - Bliss Beauty",
+      "contact": "11985584567",
+      "userId": "1"
+    },
+    {
+      "id": "45",
+      "name": "Unidade Campo Limpo - Ethereal Touch",
+      "contact": "11986695678",
+      "userId": "1"
+    },
+    {
+      "id": "46",
+      "name": "Filial Vila Andrade - Noble Clinic",
+      "contact": "11987706789",
+      "userId": "1"
+    },
+    {
+      "id": "47",
+      "name": "Unidade Cidade Ademar - Lotus Beauty",
+      "contact": "11988817890",
+      "userId": "1"
+    },
+    {
+      "id": "48",
+      "name": "Filial Grajaú - Infinite Glow",
+      "contact": "11989928901",
+      "userId": "1"
+    },
+    {
+      "id": "49",
+      "name": "Unidade Parelheiros - Phoenix Spa",
+      "contact": "11981039012",
+      "userId": "1"
+    },
+    {
+      "id": "50",
+      "name": "Filial Marsilac - Eclipse Beauty",
+      "contact": "11982140123",
+      "userId": "1"
+    }
+  ],
+  "suppliers": [],
+  "products": [],
+  "stock": [],
+  "movements": [],
+  "sales": []
+}

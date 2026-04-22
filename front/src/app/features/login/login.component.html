@@ -1,0 +1,95 @@
+<form
+  [formGroup]="formLogin"
+  (ngSubmit)="onLogin()"
+  class="flex justify-center items-center h-screen flex-col"
+>
+  <div class="mb-6">
+    <img
+      src="/logo.svg"
+      alt="Logo Estoque IA"
+      class="w-70 h-24 object-contain"
+    />
+  </div>
+  <div
+    class="flex flex-col w-full md:w-md gap-6 bg-midnight p-8 rounded-xl border border-cyan-900 shadow-2xl"
+  >
+    <h2 class="text-2xl font-semibold text-white">Login</h2>
+
+    <div class="flex flex-col gap-1">
+      <p-floatlabel variant="in">
+        <input
+          pInputText
+          fluid
+          type="email"
+          id="email"
+          formControlName="email"
+          [ngClass]="{
+            'ng-invalid ng-dirty':
+              formLogin.get('email')?.invalid &&
+              formLogin.get('email')?.touched,
+          }"
+        />
+        <label for="email">E-mail</label>
+      </p-floatlabel>
+
+      @if (
+        formLogin.get("email")?.errors?.["required"] &&
+        formLogin.get("email")?.touched
+      ) {
+        <p-message severity="error" variant="simple" size="small"
+          >E-mail obrigatório</p-message
+        >
+      }
+    </div>
+
+    <div class="flex flex-col gap-1">
+      <p-floatlabel variant="in">
+        <p-password
+          id="password"
+          formControlName="password"
+          [toggleMask]="true"
+          [feedback]="false"
+          fluid
+          autocomplete="current-password"
+          [ngClass]="{
+            'ng-invalid ng-dirty':
+              formLogin.controls['password'].invalid &&
+              formLogin.controls['password'].touched,
+          }"
+        />
+        <label for="password">Senha</label>
+      </p-floatlabel>
+
+      @if (formLogin.get("password")?.touched) {
+        @if (formLogin.get("password")?.errors?.["required"]) {
+          <p-message severity="error" variant="simple" size="small"
+            >Senha obrigatória</p-message
+          >
+        } @else if (formLogin.get("password")?.errors?.["minlength"]) {
+          <p-message severity="error" variant="simple" size="small"
+            >Mínimo de 6 caracteres</p-message
+          >
+        }
+      }
+    </div>
+    <a href="" class="text-cyan-600 hover:text-cyan-400 transition-colors"
+      >Esqueci a senha</a
+    >
+
+    <p-button
+      type="submit"
+      label="Entrar"
+      icon="pi pi-sign-in"
+      iconPos="right"
+      [loading]="loading"
+      [disabled]="formLogin.invalid"
+      size="large"
+    />
+
+    @if (errorMessage) {
+      <p-message severity="error" variant="simple" size="small"
+        >E-mail ou senha inválidos</p-message
+      >
+    }
+  </div>
+</form>

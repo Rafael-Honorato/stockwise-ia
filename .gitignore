@@ -1,0 +1,14 @@
+# Dependências
+**/node_modules/
+**/dist/
+**/.angular/
+
+# Configurações de ambiente
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+
+**/request.http
