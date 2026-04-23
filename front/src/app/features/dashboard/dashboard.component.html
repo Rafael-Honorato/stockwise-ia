@@ -1,1 +1,11 @@
-<p>DASHBOARD WORKS</p>
+<ng-container *ngIf="stock$ | async as stockData">
+  <app-stat-card
+    class="flex-1 min-w-[400px]"
+    title="Stock"
+    value="{{ stockData.totalCostPrice | currency: 'BRL' }} / {{
+      stockData.totalSalesPrice | currency: 'BRL'
+    }}"
+    description="Quantidade total de produtos disponíveis"
+    quantity="{{ stockData.quantity | number }}"
+  />
+</ng-container>

@@ -81,14 +81,14 @@ Aplicação web desenvolvida com **Angular 19** para gerenciamento de estoque, c
 ### Backend (mock)
 
 ```bash
-cd backend
+cd back
 npx json-server --watch db.json --port 3000
 ```
 
 ### Frontend
 
 ```bash
-cd frontend
+cd front
 npm install
 ng serve
 ```

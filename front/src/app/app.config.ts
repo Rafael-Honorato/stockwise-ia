@@ -8,6 +8,9 @@ import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { authInterceptor } from './core/interceptors/auth.interceptor';
 import { definePreset } from '@primeuix/themes';
 import { MessageService } from 'primeng/api';
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
 
 // 1. Crie o seu preset baseado no Aura (ou Lara/Nora)
 const MyStockwisePreset = definePreset(Aura, {
@@ -28,8 +31,11 @@ const MyStockwisePreset = definePreset(Aura, {
   },
 });
 
+registerLocaleData(localePt, 'pt-BR');
+
 export const appConfig: ApplicationConfig = {
   providers: [
+    { provide: LOCALE_ID, useValue: 'pt-BR' },
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideAnimationsAsync(),
