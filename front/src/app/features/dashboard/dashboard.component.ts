@@ -2,10 +2,10 @@ import { Component, inject, OnInit } from '@angular/core';
 import { LayoutService } from '../../core/services/layout.service';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
-import { StockCardComponent } from './stock-card/stock-card.component';
+import { StockCardComponent } from './cards/stock-card/stock-card.component';
 import { DashboardService } from './services/dashboard.service';
 import { Observable } from 'rxjs';
-import { SalesCardComponent } from './sales-card/sales-card.component';
+import { SalesCardComponent } from './cards/sales-card/sales-card.component';
 
 @Component({
   selector: 'app-dashboard',
