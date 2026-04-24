@@ -6,5 +6,4 @@ export interface Stock {
   quantity: number;
   costPrice: number;
   salePrice: number;
-  produto: Produto;
 }
