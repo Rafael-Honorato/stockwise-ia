@@ -2,14 +2,14 @@ import { Component, inject, OnInit } from '@angular/core';
 import { LayoutService } from '../../core/services/layout.service';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
-import { StatCardComponent } from './stat-card/stat-card.component';
+import { StockCardComponent } from './stock-card/stock-card.component';
 import { DashboardService } from './services/dashboard.service';
-import { Stock } from '../../core/interfaces/stock';
 import { Observable } from 'rxjs';
+import { SalesCardComponent } from './sales-card/sales-card.component';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [ButtonModule, CommonModule, StatCardComponent],
+  imports: [ButtonModule, CommonModule, StockCardComponent, SalesCardComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
@@ -21,6 +21,7 @@ export class DashboardComponent implements OnInit {
     totalSalesPrice: number;
     quantity: number;
   }>;
+  totalSales$!: Observable<{ value: number; quantity: number }>;
   ngOnInit() {
     this.layoutService.setHeader(
       'Dashboard',
@@ -28,5 +29,6 @@ export class DashboardComponent implements OnInit {
     );
 
     this.stock$ = this.dashboardService.getTotalValueStock();
+    this.totalSales$ = this.dashboardService.getTotalSales();
   }
 }
