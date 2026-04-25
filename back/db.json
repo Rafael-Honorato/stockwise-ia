@@ -5,6 +5,12 @@
       "name": "Rafael",
       "email": "rafael@estetica.com",
       "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Fernanda Silva",
+      "email": "fernanda.gestora@estetica.com",
+      "password": "senha123"
     }
   ],
   "stores": [
@@ -204,12 +210,284 @@
       "id": "50",
       "name": "Filial Marsilac - Eclipse Beauty",
       "contact": "11982140123",
-      "userId": "1"
+      "userId": "2"
     }
   ],
-  "suppliers": [],
-  "products": [],
-  "stock": [],
-  "movements": [],
-  "sales": []
+  "suppliers": [
+    {
+      "id": "1",
+      "name": "DermoTech Distribuidora",
+      "cnpj": "12.345.678/0001-90",
+      "contact": "comercial@dermotech.com.br"
+    },
+    {
+      "id": "2",
+      "name": "Natureza Pura Cosméticos",
+      "cnpj": "98.765.432/0001-10",
+      "contact": "vendas@naturezapura.com"
+    },
+    {
+      "id": "3",
+      "name": "LabSolutions Indústria Química",
+      "cnpj": "45.123.789/0001-55",
+      "contact": "representante@labsolutions.com"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Creme Hidratante Facial",
+      "description": "Hidrata profundamente a pele do rosto com ácido hialurônico, deixando-a macia e suave por 24h.",
+      "category": "Cuidados com a Pele"
+    },
+    {
+      "id": "2",
+      "name": "Sérum Anti-Idade",
+      "description": "Concentrado de retinol e vitamina C que reduz os sinais de envelhecimento, rugas e linhas finas.",
+      "category": "Cuidados com a Pele"
+    },
+    {
+      "id": "3",
+      "name": "Protetor Solar FPS 50",
+      "description": "Proteção broad spectrum contra raios UVA e UVB, toque seco e não comedogênico.",
+      "category": "Cuidados com a Pele"
+    },
+    {
+      "id": "4",
+      "name": "Shampoo Fortalecedor",
+      "description": "Fórmula com biotina e arginina que fortalece a fibra capilar, prevenindo a queda e quebra.",
+      "category": "Cuidados com o Cabelo"
+    },
+    {
+      "id": "5",
+      "name": "Condicionador Nutritivo",
+      "description": "Destração de óleos essenciais que nutre profundamente os fios, proporcionando maciez e brilho intenso.",
+      "category": "Cuidados com o Cabelo"
+    },
+    {
+      "id": "6",
+      "name": "Máscara Capilar Reparadora",
+      "description": "Tratamento semanal reconstrutor para cabelos danificados por química e ferramentas térmicas.",
+      "category": "Cuidados com o Cabelo"
+    },
+    {
+      "id": "7",
+      "name": "Esfoliante Corporal Revitalizante",
+      "description": "Partículas de apricot e microesferas que removem células mortas e estimulam a renovação celular.",
+      "category": "Cuidados com o Corpo"
+    },
+    {
+      "id": "8",
+      "name": "Óleo Corporal Hidratante",
+      "description": "Mistura de óleos vegetais (amêndoas, rosa mosqueta) para hidratação profunda e perfume duradouro.",
+      "category": "Cuidados com o Corpo"
+    },
+    {
+      "id": "9",
+      "name": "Desodorante Natural",
+      "description": "À base de alum, neutraliza o odor sem obstruir os poros, livre de parabenos e álcool.",
+      "category": "Cuidados com o Corpo"
+    },
+    {
+      "id": "10",
+      "name": "Tônico Adstringente",
+      "description": "Equilibra o pH da pele e remove impurezas residuais, controlando a oleosidade.",
+      "category": "Cuidados com a Pele"
+    }
+  ],
+  "stock": [
+    {
+      "id": "1",
+      "storeId": "5",
+      "productId": "1",
+      "quantity": 100,
+      "costPrice": 35.5,
+      "salePrice": 75.0
+    },
+    {
+      "id": "2",
+      "storeId": "12",
+      "productId": "2",
+      "quantity": 50,
+      "costPrice": 45.0,
+      "salePrice": 120.0
+    },
+    {
+      "id": "3",
+      "storeId": "17",
+      "productId": "3",
+      "quantity": 200,
+      "costPrice": 22.0,
+      "salePrice": 59.9
+    },
+    {
+      "id": "4",
+      "storeId": "18",
+      "productId": "4",
+      "quantity": 150,
+      "costPrice": 28.0,
+      "salePrice": 65.0
+    },
+    {
+      "id": "5",
+      "storeId": "22",
+      "productId": "5",
+      "quantity": 80,
+      "costPrice": 29.9,
+      "salePrice": 68.0
+    },
+    {
+      "id": "6",
+      "storeId": "23",
+      "productId": "6",
+      "quantity": 120,
+      "costPrice": 55.0,
+      "salePrice": 110.0
+    },
+    {
+      "id": "7",
+      "storeId": "24",
+      "productId": "7",
+      "quantity": 60,
+      "costPrice": 18.0,
+      "salePrice": 45.0
+    },
+    {
+      "id": "8",
+      "storeId": "25",
+      "productId": "8",
+      "quantity": 90,
+      "costPrice": 32.0,
+      "salePrice": 85.0
+    },
+    {
+      "id": "9",
+      "storeId": "26",
+      "productId": "9",
+      "quantity": 110,
+      "costPrice": 12.0,
+      "salePrice": 35.0
+    },
+    {
+      "id": "10",
+      "storeId": "27",
+      "productId": "10",
+      "quantity": 70,
+      "costPrice": 20.0,
+      "salePrice": 48.0
+    },
+    {
+      "id": "11",
+      "storeId": "5",
+      "productId": "3",
+      "quantity": 50,
+      "costPrice": 22.0,
+      "salePrice": 59.9
+    },
+    {
+      "id": "12",
+      "storeId": "50",
+      "productId": "1",
+      "quantity": 30,
+      "costPrice": 35.5,
+      "salePrice": 75.0
+    }
+  ],
+  "movements": [
+    {
+      "id": "1",
+      "stockId": "1",
+      "type": "entrada",
+      "quantity": 50,
+      "date": "2023-10-01T10:00:00Z",
+      "supplierId": "1",
+      "notes": "Reposição mensal"
+    },
+    {
+      "id": "2",
+      "stockId": "2",
+      "type": "saida",
+      "quantity": 5,
+      "date": "2023-10-05T14:30:00Z",
+      "supplierId": null,
+      "notes": "Uso interno em procedimento"
+    },
+    {
+      "id": "3",
+      "stockId": "3",
+      "type": "entrada",
+      "quantity": 100,
+      "date": "2023-10-10T09:15:00Z",
+      "supplierId": "2",
+      "notes": "Compra em promoção"
+    },
+    {
+      "id": "4",
+      "stockId": "6",
+      "type": "saida",
+      "quantity": 10,
+      "date": "2023-10-12T16:45:00Z",
+      "supplierId": null,
+      "notes": "Venda direta"
+    },
+    {
+      "id": "5",
+      "stockId": "10",
+      "type": "entrada",
+      "quantity": 70,
+      "date": "2023-10-15T11:20:00Z",
+      "supplierId": "3",
+      "notes": "Estoque inicial"
+    }
+  ],
+  "sales": [
+    {
+      "id": "1",
+      "storeId": "5",
+      "productId": "1",
+      "quantity": 2,
+      "totalPrice": 150.0,
+      "date": "2023-10-05T15:00:00Z"
+    },
+    {
+      "id": "2",
+      "storeId": "12",
+      "productId": "2",
+      "quantity": 1,
+      "totalPrice": 120.0,
+      "date": "2023-10-06T10:30:00Z"
+    },
+    {
+      "id": "3",
+      "storeId": "17",
+      "productId": "3",
+      "quantity": 3,
+      "totalPrice": 179.7,
+      "date": "2023-10-07T14:20:00Z"
+    },
+    {
+      "id": "4",
+      "storeId": "22",
+      "productId": "5",
+      "quantity": 1,
+      "totalPrice": 68.0,
+      "date": "2023-10-08T11:10:00Z"
+    },
+    {
+      "id": "5",
+      "storeId": "27",
+      "productId": "10",
+      "quantity": 2,
+      "totalPrice": 96.0,
+      "date": "2023-10-09T16:00:00Z"
+    },
+    {
+      "id": "6",
+      "storeId": "50",
+      "productId": "1",
+      "quantity": 5,
+      "totalPrice": 375.0,
+      "date": "2023-10-10T09:00:00Z"
+    }
+  ]
 }
