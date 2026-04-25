@@ -69,7 +69,8 @@
               "buildTarget": "estoque-ia:build:production"
             },
             "development": {
-              "buildTarget": "estoque-ia:build:development"
+              "buildTarget": "estoque-ia:build:development",
+              "liveReload": true
             }
           },
           "defaultConfiguration": "development"
