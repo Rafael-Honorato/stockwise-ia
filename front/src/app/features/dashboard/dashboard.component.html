@@ -12,7 +12,7 @@
   <ng-container *ngIf="metrics().sales">
     <app-basic-card
       class="flex-1"
-      title="Vendas"
+      title="Produtos vendidos"
       value="{{ metrics().sales.value | currency: 'BRL' }}"
       quantity="{{ metrics().sales.quantity | number }}"
       description="Vendas Totais"
@@ -37,7 +37,7 @@
       title="Ticket Médio"
       value="{{ averageTicked().average | currency: 'BRL' }}"
       quantity="{{ averageTicked().quantity | number }}"
-      description="Vendas Totais"
+      description="Vendas Realizadas"
     />
   </ng-container>
 </div>
