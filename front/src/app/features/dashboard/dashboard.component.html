@@ -1,21 +1,43 @@
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 w-full">
-  <ng-container *ngIf="stock$ | async as stockData">
+<div class="flex gap-4 w-full justify-start flex-wrap">
+  <ng-container *ngIf="metrics().stock">
     <app-stock-card
-      class="w-full"
+      class="flex-1"
       title="Estoque"
-      costPrice="{{ stockData.totalCostPrice }}"
-      salesPrice="{{ stockData.totalSalesPrice }}"
-      description="custo - venda"
-      quantity="{{ stockData.quantity }}"
+      costPrice="{{ metrics().stock.totalCostPrice | currency: 'BRL' }}"
+      salesPrice="{{ metrics().stock.totalSalesPrice | currency: 'BRL' }}"
+      description="Custo Bruto - Venda Bruta"
+      quantity="{{ metrics().stock.quantity | number }}"
     />
   </ng-container>
-  <ng-container *ngIf="totalSales$ | async as salesData">
-    <app-sales-card
-      class="w-full"
+  <ng-container *ngIf="metrics().sales">
+    <app-basic-card
+      class="flex-1"
       title="Vendas"
-      value="{{ salesData.value }}"
-      quantity="{{ salesData.quantity }}"
-      description="Vendas totais"
+      value="{{ metrics().sales.value | currency: 'BRL' }}"
+      quantity="{{ metrics().sales.quantity | number }}"
+      description="Vendas Totais"
+      color="{{ metrics().statusColor }}"
+      extra="{{ metrics().estimatedProfit | currency: 'BRL' }}"
+    />
+  </ng-container>
+  <ng-container *ngIf="metrics().estimatedProfit">
+    <app-basic-card
+      class="flex-1"
+      title="Lucro Estimado"
+      value="{{ metrics().estimatedProfit | currency: 'BRL' }}"
+      quantity="{{
+        metrics().stock.quantity - metrics().sales.quantity | number
+      }}"
+      description="Lucro Líquido"
+    />
+  </ng-container>
+  <ng-container *ngIf="averageTicked().average">
+    <app-basic-card
+      class="flex-1"
+      title="Ticket Médio"
+      value="{{ averageTicked().average | currency: 'BRL' }}"
+      quantity="{{ averageTicked().quantity | number }}"
+      description="Vendas Totais"
     />
   </ng-container>
 </div>
