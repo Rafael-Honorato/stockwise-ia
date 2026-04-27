@@ -6,12 +6,14 @@
     <div class="flex items-center p-4 mb-6 justify-between">
       <button
         (click)="toggleSidebar()"
-        class="p-2 rounded-lg hover:bg-cyan-900/30 transition-colors text-cyan-400"
+        class="p-2 rounded-lg hover:bg-cyan-900/30 transition-colors text-cyan-400 cursor-pointer"
       >
         <i class="pi pi-bars" style="font-size: 1.2rem"></i>
       </button>
       <span>
-        <img src="/stockwise-white.webp" width="170" alt="" />
+        <a routerLink="/">
+          <img src="/stockwise-white.webp" width="170" alt="" />
+        </a>
       </span>
     </div>
 
@@ -69,12 +71,14 @@
             <p class="text-cyan-100/60 text-xs mb-1">Função usuário</p>
             <a
               class="text-xs font-bold text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer uppercase tracking-wider"
+              (click)="onLoggout()"
             >
               Sair
             </a>
           } @else {
             <a
               class="text-[10px] font-bold text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer uppercase mt-1"
+              (click)="onLoggout()"
             >
               Sair
             </a>
