@@ -8,8 +8,6 @@ Aplicação web desenvolvida com **Angular 19** para gerenciamento de estoque, c
 
 ## 📸 Preview
 
-
-
 ![Dashboard](https://raw.githubusercontent.com/Rafael-Honorato/stockwise-ia/refs/heads/main/front/public/print-dashboard.jpg)
 
 ![Chat IA](https://raw.githubusercontent.com/Rafael-Honorato/stockwise-ia/refs/heads/main/front/public/print-chat.jpg)
